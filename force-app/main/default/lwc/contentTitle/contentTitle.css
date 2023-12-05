@@ -1,0 +1,15 @@
+.single {
+    border: 1px solid red;
+    height: 200px;
+    
+}
+
+.texto {
+    color: black;
+    height: 120px;
+    font-weight: bold;
+    border: 1px solid red;
+    background-color: beige;
+    max-width:100%;
+    word-wrap: break-word;
+}
