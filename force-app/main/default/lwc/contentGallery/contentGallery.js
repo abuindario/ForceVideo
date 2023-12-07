@@ -2,7 +2,7 @@ import { LightningElement, wire, track, api } from 'lwc';
 import getContenidoPorCliente from '@salesforce/apex/ContenidoSelector.getContenidoPorCliente';
 import { NavigationMixin } from 'lightning/navigation'
 
-export default class ContentGalery extends NavigationMixin(LightningElement) { 
+export default class ContentGallery extends NavigationMixin(LightningElement) { 
     @api recordId;
     @track contentId = new Array();
 

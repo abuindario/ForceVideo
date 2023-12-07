@@ -19,4 +19,14 @@ public class ContenidoSelector {
 
         }
     }
+
+    @AuraEnabled(cacheable = true)
+    public static List<Content__c> getAllContent() {
+        try {
+            return [SELECT Id, Name, Category__c, Content_type__c, url_cartel_c__c FROM Content__c WHERE Active_content__c = True];
+        } catch(Exception e) {
+            throw new AuraHandledException(e.getMessage());
+        }
+    }
+
 }
