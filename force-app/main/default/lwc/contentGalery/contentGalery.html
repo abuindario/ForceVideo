@@ -5,8 +5,8 @@
                 <template for:each={contentId} for:item="c">
                     <lightning-layout-item key={c.id} size="3" padding="around-small">
                         <div class="header-column">
-                            <c-content-title content={c} oncontselected={handleSelection}>
-                            </c-content-title>
+                            <c-content-tile content={c} oncontselected={handleSelection}>
+                            </c-content-tile>
                         </div>
                     </lightning-layout-item>
                 </template>
