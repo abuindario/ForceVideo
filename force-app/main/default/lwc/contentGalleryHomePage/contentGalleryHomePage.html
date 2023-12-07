@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Contenido disponible">
+        <template if:true={contentId}>
+            <lightning-layout multiple-rows>
+                <template for:each={contentId} for:item="c">
+                    <lightning-layout-item key={c.id} size="3" padding="around-small">
+                        <div class="header-column">
+                            <c-content-tile content={c} oncontselected={handleSelection}>
+                            </c-content-tile>
+                        </div>
+                    </lightning-layout-item>
+                </template>
+            </lightning-layout>
+        </template>
+        <template if:true={myError}>
+            <lightning-layout>
+                <lightning-layout-item padding="around-small">
+                    <div class="header-column">
+                        <p>{myError}</p>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+        </template>
+    </lightning-card>
+</template>
