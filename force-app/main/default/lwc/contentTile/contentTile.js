@@ -6,7 +6,7 @@ import Category from '@salesforce/schema/Content__c.Category__c';
 import ContentType from '@salesforce/schema/Content__c.Content_type__c';
 import url from '@salesforce/schema/Content__c.url_cartel_c__c';
 
-export default class ContentTitle extends LightningElement {
+export default class ContentTile extends LightningElement {
     @api content;
     error;
     
