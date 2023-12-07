@@ -28,4 +28,5 @@ public class ContenidoSelector {
             throw new AuraHandledException(e.getMessage());
         }
     }
+
 }
