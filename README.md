@@ -30,6 +30,7 @@ There is a demo user available to try the app:
   - The user will be notified by email.
 - Choose between Movies, Series or a Total subscritpion - the available content will be affected.
 - Avatar's related list.
+- If a new Account is created, a new avatar (Primary Avatar) will be created. 
 
 ![accountRecordPage](https://github.com/abuindario/ForceVideo/assets/92298516/2c180759-2fa7-495d-9877-d74b12582379)
 
@@ -41,6 +42,25 @@ There is a demo user available to try the app:
 - Avatar record page with some basic information.
   - There are some validation rules:
     - Parental control is not available if the avatar selected is the Primary Avatar.
-    - There is only one primary avatar per account,
-    - 
+    - There is only one primary avatar per account.
+    - It is not possible to uncheck the primary avatar checkbox. If you try, an alert will be displayed.
+    - If an avatar is selected as Primary Avatar, the previous Primary Avatar will be removed as the Primary Avatar.
+
 ![avatar_moviesSubscriptor](https://github.com/abuindario/ForceVideo/assets/92298516/a799d17d-08e6-4350-b8c6-83d51bc5350d)
+
+## Contents
+- A list of all active, inactive, and discontinued content.
+- Content record page with some basic information.
+- Content records come from OMDb API.
+
+![content_barbieRecordPage](https://github.com/abuindario/ForceVideo/assets/92298516/a878a329-5f8f-48b4-9049-08e5e532ef91)
+
+## Seasons and Episodes
+- These tabs are not visible by default.
+- It is possible to access to a season record page or to a episode record page from their Content Record Page.
+- Season record page contain the list of episodes.
+- Episode record page contain some basic information of the episodes.
+
+![content_breakingBadRecordPage](https://github.com/abuindario/ForceVideo/assets/92298516/a9c54fde-6d2e-41de-8272-f21677fda02e)
+
+##
